@@ -61,6 +61,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formulas.cs" />
+    <Compile Include="Logic.cs" />
+    <Compile Include="Forms\CollateralCashFlowsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CollateralCashFlowsForm.Designer.cs">
+      <DependentUpon>CollateralCashFlowsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CollateralForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +88,9 @@
     <Compile Include="Forms\StructureForm.Designer.cs">
       <DependentUpon>StructureForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\CollateralCashFlowsForm.resx">
+      <DependentUpon>CollateralCashFlowsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CollateralForm.resx">
       <DependentUpon>CollateralForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,9 +137,6 @@
     <Content Include="DBfiles_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DBfiles.mdf</DependentUpon>
-    </Content>
-    <Content Include="Resources\DBfiles.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\dbfILES.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

@@ -42,5 +42,11 @@ namespace Model
             CollateralForm newForm = new CollateralForm();
             newForm.Show();
         }
+
+        private void collateralToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            CollateralCashFlowsForm newForm = new CollateralCashFlowsForm();
+            newForm.Show();
+        }
     }
 }

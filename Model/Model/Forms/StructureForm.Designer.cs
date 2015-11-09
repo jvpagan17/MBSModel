@@ -266,6 +266,7 @@
             this.collateralToolStripMenuItem1.Name = "collateralToolStripMenuItem1";
             this.collateralToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.collateralToolStripMenuItem1.Text = "Collateral";
+            this.collateralToolStripMenuItem1.Click += new System.EventHandler(this.collateralToolStripMenuItem1_Click);
             // 
             // tranchesToolStripMenuItem
             // 
