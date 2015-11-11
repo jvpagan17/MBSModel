@@ -48,5 +48,10 @@ namespace Model
             CollateralCashFlowsForm newForm = new CollateralCashFlowsForm();
             newForm.Show();
         }
+
+        private void sTRUCTUREDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

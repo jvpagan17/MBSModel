@@ -37,15 +37,12 @@
             this.TPrincipal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Intererst = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.collateralCashFlowsDataSet = new System.Data.DataSet();
             ((System.ComponentModel.ISupportInitialize)(this.collateralCashFlowsGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.collateralCashFlowsDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // collateralCashFlowsGridView
             // 
             this.collateralCashFlowsGridView.AllowUserToOrderColumns = true;
-            this.collateralCashFlowsGridView.AutoGenerateColumns = false;
             this.collateralCashFlowsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.collateralCashFlowsGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.No,
@@ -56,7 +53,6 @@
             this.TPrincipal,
             this.Intererst,
             this.Total});
-            this.collateralCashFlowsGridView.DataSource = this.collateralCashFlowsDataSet;
             this.collateralCashFlowsGridView.Location = new System.Drawing.Point(-1, -1);
             this.collateralCashFlowsGridView.Name = "collateralCashFlowsGridView";
             this.collateralCashFlowsGridView.Size = new System.Drawing.Size(1160, 602);
@@ -102,10 +98,6 @@
             this.Total.HeaderText = "Total";
             this.Total.Name = "Total";
             // 
-            // collateralCashFlowsDataSet
-            // 
-            this.collateralCashFlowsDataSet.DataSetName = "CollateralCashFlowsDataSet";
-            // 
             // CollateralCashFlowsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -115,7 +107,6 @@
             this.Name = "CollateralCashFlowsForm";
             this.Text = "CollateralCashFlowsForm";
             ((System.ComponentModel.ISupportInitialize)(this.collateralCashFlowsGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.collateralCashFlowsDataSet)).EndInit();
             this.ResumeLayout(false);
             calcCollateralCashFlows();
 
@@ -125,7 +116,7 @@
         {
             for (int i = 0; i < 361; i++)
             {
-               this.collateralCashFlowsGridView.Rows.Add(0,0,0,0,0,0,0,0);
+                this.collateralCashFlowsGridView.Rows.Add(i,0,0,0,0,0,0,0);
                 //You don't need to set the other properties, they were binded when you put the DataSource in there
                 //    grdData.Rows[i].Cells[5].Value = Convert.ToDouble(ds.Tables[0].Rows[i]["Qty"]) * Convert.ToDouble(ds.Tables[0].Rows[i]["Rate"]);
             }
@@ -142,6 +133,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TPrincipal;
         private System.Windows.Forms.DataGridViewTextBoxColumn Intererst;
         private System.Windows.Forms.DataGridViewTextBoxColumn Total;
-        private System.Data.DataSet collateralCashFlowsDataSet;
     }
 }
