@@ -87,7 +87,7 @@ namespace Model
 
 
 
-            double LastSerialRemainder, RecordBalance, URecordBalance,t;
+            double LastSerialRemainder, RecordBalance, URecordBalance;
             int FirstSerial, LastSerial, TotalSerial, UnitsRemaining;
             int CollType;
             

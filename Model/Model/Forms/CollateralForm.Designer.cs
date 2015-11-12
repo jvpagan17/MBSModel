@@ -733,7 +733,7 @@
             this.Controls.Add(this.menuStrip2);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "CollateralForm";
-            this.Text = "UCalcBalance";
+            this.Text = "CollateralForm";
             this.Load += new System.EventHandler(this.CollateralForm_Load);
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();

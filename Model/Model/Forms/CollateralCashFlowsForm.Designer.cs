@@ -106,21 +106,11 @@
             this.Controls.Add(this.collateralCashFlowsGridView);
             this.Name = "CollateralCashFlowsForm";
             this.Text = "CollateralCashFlowsForm";
+            this.Load += new System.EventHandler(this.CollateralCashFlowsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.collateralCashFlowsGridView)).EndInit();
             this.ResumeLayout(false);
-            calcCollateralCashFlows();
-
         }
 
-        private void calcCollateralCashFlows()
-        {
-            for (int i = 0; i < 361; i++)
-            {
-                this.collateralCashFlowsGridView.Rows.Add(i,0,0,0,0,0,0,0);
-                //You don't need to set the other properties, they were binded when you put the DataSource in there
-                //    grdData.Rows[i].Cells[5].Value = Convert.ToDouble(ds.Tables[0].Rows[i]["Qty"]) * Convert.ToDouble(ds.Tables[0].Rows[i]["Rate"]);
-            }
-        }
 
         #endregion
 
